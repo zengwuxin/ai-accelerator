@@ -1,6 +1,7 @@
 apiVersion: serving.kserve.io/v1alpha1
 kind: ServingRuntime
 metadata:
+  namespace: parasol-insurance
   name: multi-model-server
   labels:
     opendatahub.io/dashboard: 'true'

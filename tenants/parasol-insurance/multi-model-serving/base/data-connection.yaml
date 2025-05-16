@@ -1,6 +1,7 @@
 kind: Secret
 apiVersion: v1
 metadata:
+  namespace: parasol-insurance
   name: accident-model-data-conn
   labels:
     opendatahub.io/dashboard: 'true'
