@@ -83,6 +83,9 @@ spec:
               readOnly: true
               subPath: ca-bundle.crt
           workingDir: /opt/app-root/src
+          envFrom:
+            - secretRef:
+                name: minio-data-connection
       enableServiceLinks: false
       serviceAccountName: custom-workbench
       volumes:
